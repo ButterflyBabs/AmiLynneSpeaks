@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AmiLynne "Babs" Carroll | Speaker, Author, Alignment Architect</title>
+<meta name="description" content="AmiLynne "Babs" Carroll helps people move from fear, self-doubt, and survival patterns into purpose, clarity, and aligned action. Book her to speak at your next event.">
+<meta name="keywords" content="keynote speaker, alignment architect, life charter, personal transformation, spiritual growth, motivational speaker, women's speaker, conference speaker">
+<meta name="author" content="AmiLynne Carroll">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://amilynnespeaks.vercel.app">
+<meta property="og:title" content="AmiLynne "Babs" Carroll | Speaker, Author, Alignment Architect">
+<meta property="og:description" content="Helping people move from fear and survival patterns into purpose, clarity, and aligned action.">
+<meta property="og:image" content="https://ik.imagekit.io/amilynne/babs-speaker-og.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AmiLynne "Babs" Carroll | Speaker, Author, Alignment Architect">
+<meta name="twitter:description" content="Helping people move from fear and survival patterns into purpose, clarity, and aligned action.">
+<meta name="twitter:image" content="https://ik.imagekit.io/amilynne/babs-speaker-og.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ivory:#F6F1E8;
+    --indigo:#1F315B;
+    --indigo-soft:#2a3f6b;
+    --plum:#5E3B6C;
+    --plum-soft:#7a4f8a;
+    --teal:#2E7C83;
+    --teal-soft:#3d8f96;
+    --gold:#D4AF63;
+    --gold-soft:#e0c07a;
+    --lavender:#CDBED6;
+    --taupe:#B9A9A9;
+    --ink:#1a1f2e;
+    --muted:#6b6b7a;
+    --line:#e3ddd0;
+    --card:#fffdf8;
+    --display:'Cormorant Garamond',Georgia,serif;
+    --body:'Open Sans',system-ui,sans-serif;
+  }
+  
+  *{box-sizing:border-box;margin:0;padding:0}
+  
+  body{
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:var(--body);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  
+  /* Hero Section */
+  .hero{
+    background:linear-gradient(135deg,var(--indigo) 0%,var(--plum) 100%);
+    color:var(--ivory);
+    padding:80px 0 100px;
+    position:relative;
+    overflow:hidden;
+  }
+  
+  .hero::before{
+    content:"";
+    position:absolute;
+    top:-50%;
+    right:-20%;
+    width:80%;
+    height:150%;
+    background:radial-gradient(ellipse,rgba(212,175,99,.15),transparent 70%);
+    pointer-events:none;
+  }
+  
+  .hero::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:4px;
+    background:linear-gradient(90deg,var(--gold),var(--gold-soft));
+  }
+  
+  .wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+  
+  .hero-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+    position:relative;
+    z-index:1;
+  }
+  
+  .hero-text h1{
+    font-family:var(--display);
+    font-size:52px;
+    font-weight:600;
+    line-height:1.1;
+    margin-bottom:20px;
+  }
+  
+  .hero-text h1 span{
+    color:var(--gold);
+    font-style:italic;
+  }
+  
+  .hero-text .tagline{
+    font-size:20px;
+    color:var(--lavender);
+    margin-bottom:24px;
+    font-weight:500;
+  }
+  
+  .hero-text p{
+    font-size:16px;
+    line-height:1.7;
+    color:#d4d0c8;
+    margin-bottom:32px;
+    max-width:500px;
+  }
+  
+  .cta-button{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:var(--gold);
+    color:var(--indigo);
+    font-family:var(--body);
+    font-size:14px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.1em;
+    padding:16px 32px;
+    border-radius:4px;
+    text-decoration:none;
+    transition:all .2s;
+    border:none;
+    cursor:pointer;
+  }
+  
+  .cta-button:hover{
+    background:var(--gold-soft);
+    transform:translateY(-2px);
+    box-shadow:0 8px 24px rgba(212,175,99,.3);
+  }
+  
+  .hero-image{
+    position:relative;
+  }
+  
+  .hero-image img{
+    width:100%;
+    max-width:450px;
+    border-radius:8px;
+    box-shadow:0 24px 48px rgba(0,0,0,.3);
+    display:block;
+    margin:0 auto;
+  }
+  
+  .hero-image::before{
+    content:"";
+    position:absolute;
+    top:-20px;
+    left:-20px;
+    right:20px;
+    bottom:20px;
+    border:2px solid var(--gold);
+    border-radius:8px;
+    z-index:-1;
+  }
+  
+  /* Topics Section */
+  .topics{
+    padding:80px 0;
+    background:var(--card);
+  }
+  
+  .section-header{
+    text-align:center;
+    margin-bottom:60px;
+  }
+  
+  .section-header h2{
+    font-family:var(--display);
+    font-size:42px;
+    color:var(--indigo);
+    margin-bottom:16px;
+  }
+  
+  .section-header p{
+    font-size:18px;
+    color:var(--muted);
+    max-width:600px;
+    margin:0 auto;
+  }
+  
+  .topics-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:32px;
+  }
+  
+  .topic-card{
+    background:var(--ivory);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:32px;
+    transition:all .2s;
+  }
+  
+  .topic-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 32px rgba(31,49,91,.1);
+    border-color:var(--gold);
+  }
+  
+  .topic-card .number{
+    font-family:var(--display);
+    font-size:48px;
+    color:var(--gold);
+    font-weight:600;
+    line-height:1;
+    margin-bottom:16px;
+  }
+  
+  .topic-card h3{
+    font-family:var(--display);
+    font-size:24px;
+    color:var(--indigo);
+    margin-bottom:12px;
+  }
+  
+  .topic-card p{
+    font-size:15px;
+    color:var(--muted);
+    line-height:1.6;
+  }
+  
+  /* About Section */
+  .about{
+    padding:80px 0;
+    background:var(--ivory);
+  }
+  
+  .about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+  }
+  
+  .about-text h2{
+    font-family:var(--display);
+    font-size:36px;
+    color:var(--indigo);
+    margin-bottom:24px;
+  }
+  
+  .about-text p{
+    font-size:16px;
+    color:var(--ink);
+    margin-bottom:20px;
+    line-height:1.7;
+  }
+  
+  .about-text .signature{
+    font-family:var(--display);
+    font-size:24px;
+    color:var(--gold);
+    font-style:italic;
+    margin-top:32px;
+  }
+  
+  .about-stats{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
+  }
+  
+  .stat{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:24px;
+    text-align:center;
+  }
+  
+  .stat .number{
+    font-family:var(--display);
+    font-size:42px;
+    color:var(--indigo);
+    font-weight:600;
+    line-height:1;
+  }
+  
+  .stat .label{
+    font-size:13px;
+    color:var(--muted);
+    text-transform:uppercase;
+    letter-spacing:.1em;
+    margin-top:8px;
+  }
+  
+  /* Testimonials */
+  .testimonials{
+    padding:80px 0;
+    background:var(--indigo);
+    color:var(--ivory);
+    position:relative;
+  }
+  
+  .testimonials::before{
+    content:""";
+    position:absolute;
+    top:40px;
+    left:50%;
+    transform:translateX(-50%);
+    font-family:var(--display);
+    font-size:200px;
+    color:var(--gold);
+    opacity:.1;
+    line-height:1;
+  }
+  
+  .testimonials h2{
+    font-family:var(--display);
+    font-size:36px;
+    text-align:center;
+    margin-bottom:48px;
+    position:relative;
+    z-index:1;
+  }
+  
+  .testimonial{
+    max-width:800px;
+    margin:0 auto;
+    text-align:center;
+    position:relative;
+    z-index:1;
+  }
+  
+  .testimonial p{
+    font-family:var(--display);
+    font-size:28px;
+    font-style:italic;
+    line-height:1.5;
+    margin-bottom:24px;
+  }
+  
+  .testimonial .author{
+    font-size:16px;
+    color:var(--gold);
+  }
+  
+  /* Booking Section */
+  .booking{
+    padding:80px 0;
+    background:var(--card);
+    text-align:center;
+  }
+  
+  .booking h2{
+    font-family:var(--display);
+    font-size:42px;
+    color:var(--indigo);
+    margin-bottom:16px;
+  }
+  
+  .booking > p{
+    font-size:18px;
+    color:var(--muted);
+    max-width:600px;
+    margin:0 auto 48px;
+  }
+  
+  .booking-options{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:32px;
+    max-width:900px;
+    margin:0 auto;
+  }
+  
+  .booking-card{
+    background:var(--ivory);
+    border:2px solid var(--line);
+    border-radius:12px;
+    padding:40px 32px;
+    transition:all .2s;
+  }
+  
+  .booking-card:hover{
+    border-color:var(--gold);
+    transform:translateY(-4px);
+    box-shadow:0 12px 32px rgba(31,49,91,.1);
+  }
+  
+  .booking-card.featured{
+    border-color:var(--gold);
+    background:linear-gradient(135deg,var(--ivory) 0%,#f9f6f0 100%);
+  }
+  
+  .booking-card h3{
+    font-family:var(--display);
+    font-size:24px;
+    color:var(--indigo);
+    margin-bottom:8px;
+  }
+  
+  .booking-card .price{
+    font-family:var(--display);
+    font-size:48px;
+    color:var(--gold);
+    font-weight:600;
+    margin-bottom:16px;
+  }
+  
+  .booking-card .price span{
+    font-size:16px;
+    color:var(--muted);
+    font-weight:400;
+  }
+  
+  .booking-card ul{
+    list-style:none;
+    text-align:left;
+    margin:24px 0;
+    padding:0;
+  }
+  
+  .booking-card li{
+    padding:8px 0;
+    border-bottom:1px solid var(--line);
+    font-size:15px;
+  }
+  
+  .booking-card li::before{
+    content:"✓";
+    color:var(--gold);
+    font-weight:700;
+    margin-right:10px;
+  }
+  
+  /* Footer */
+  footer{
+    background:var(--indigo);
+    color:var(--ivory);
+    padding:40px 0;
+    text-align:center;
+  }
+  
+  footer p{
+    font-size:14px;
+    color:#d4d0c8;
+  }
+  
+  footer a{
+    color:var(--gold);
+    text-decoration:none;
+  }
+  
+  /* Responsive */
+  @media(max-width:900px){
+    .hero-content,.about-grid{grid-template-columns:1fr}
+    .hero-text h1{font-size:40px}
+    .hero-image{display:none}
+    .about-stats{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>AmiLynne <span>"Babs"</span> Carroll</h1>
+        <p class="tagline">Alignment Architect • Speaker • Author</p>
+        <p>Helping people move from fear, self-doubt, survival patterns, and spiritual disconnection into purpose, clarity, aligned action, and inner freedom. Creator of the LifeCharter system and host of Conversations of Consequence DAILY.</p>
+        <a href="#booking" class="cta-button">Book Babs to Speak →</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://ik.imagekit.io/amilynne/babs-speaker-hero.jpg" alt="AmiLynne Babs Carroll - Speaker" onerror="this.src='https://via.placeholder.com/450x600/1F315B/D4AF63?text=Babs+Carroll'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Topics Section -->
+<section class="topics">
+  <div class="wrap">
+    <div class="section-header">
+      <h2>Signature Keynotes</h2>
+      <p>Transformative talks that meet your audience where they are and guide them toward alignment</p>
+    </div>
+    <div class="topics-grid">
+      <div class="topic-card">
+        <div class="number">01</div>
+        <h3>The LifeCharter: Designing a Life of Alignment</h3>
+        <p>Introduce your audience to the 12-dimension framework for intentional living. From career to relationships, spirituality to finances—discover how to build a life that reflects your true values, not someone else's expectations.</p>
+      </div>
+      <div class="topic-card">
+        <div class="number">02</div>
+        <h3>The Yellow Light: From Reaction to Response</h3>
+        <p>Learn the transformative practice of the Yellow Yield—creating sacred pause between stimulus and response. Perfect for audiences dealing with overwhelm, anxiety, or the constant pressure to react.</p>
+      </div>
+      <div class="topic-card">
+        <div class="number">03</div>
+        <h3>Remembering Who You Are</h3>
+        <p>Transformation isn't about fixing what's broken—it's about remembering what's true. This talk guides audiences through the journey from survival patterns to sacred identity, from fear to faith.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Meet Babs</h2>
+        <p>AmiLynne "Babs" Carroll is the Founder of Sacred Kaleidoscope Community and creator of the LifeCharter program. Her work helps people move from fear, self-doubt, and survival patterns into purpose, clarity, and aligned action.</p>
+        <p>Through her daily show Conversations of Consequence, her LifeCharter workshops, and her sacred mentoring work, Babs has touched thousands of lives with her message of transformation through alignment.</p>
+        <p>Her approach blends metaphysical teaching with practical life design, emotional healing with spiritual identity work, and divine inspiration with embodied action.</p>
+        <p class="signature">Head up, wings out.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <div class="number">150+</div>
+          <div class="label">Episodes Produced</div>
+        </div>
+        <div class="stat">
+          <div class="number">12</div>
+          <div class="label">Life Dimensions</div>
+        </div>
+        <div class="stat">
+          <div class="number">500+</div>
+          <div class="label">Community Members</div>
+        </div>
+        <div class="stat">
+          <div class="number">1</div>
+          <div class="label">Sacred Mission</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+  <div class="wrap">
+    <h2>What People Say</h2>
+    <div class="testimonial">
+      <p>"Babs has a rare gift for holding space while simultaneously calling you forward. Her teachings don't just inspire—they transform."</p>
+      <div class="author">— LifeCharter Circle Member</div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking Section -->
+<section class="booking" id="booking">
+  <div class="wrap">
+    <h2>Book Babs to Speak</h2>
+    <p>Bring the message of alignment, purpose, and transformation to your next event</p>
+    <div class="booking-options">
+      <div class="booking-card">
+        <h3>Keynote</h3>
+        <div class="price">$3,500<span>+ travel</span></div>
+        <ul>
+          <li>45-60 minute keynote</li>
+          <li>Customized for your audience</li>
+          <li>Q&A session included</li>
+          <li>Digital resource bundle</li>
+        </ul>
+        <a href="mailto:amilynne@amilynnecarroll.com?subject=Keynote Speaking Inquiry" class="cta-button">Inquire Now</a>
+      </div>
+      <div class="booking-card featured">
+        <h3>Workshop</h3>
+        <div class="price">$5,500<span>+ travel</span></div>
+        <ul>
+          <li>Half-day interactive workshop</li>
+          <li>LifeCharter framework deep-dive</li>
+          <li>Participant workbooks</li>
+          <li>Follow-up resource package</li>
+          <li>30-day accountability check-in</li>
+        </ul>
+        <a href="mailto:amilynne@amilynnecarroll.com?subject=Workshop Speaking Inquiry" class="cta-button">Inquire Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <p>© 2026 AmiLynne Carroll | Sacred Kaleidoscope Community | <a href="https://amilynnecarroll.com">amilynnecarroll.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
