@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AmiLynne Speaks | TEDx Speaker, Author & Spiritual Resilience Keynote Speaker</title>
 <meta name="description" content="Book AmiLynne "Babs" Carroll, TEDx speaker, author, quadriplegic speaker, and creator of LifeCharter, for keynotes on adaptability, resilience, faith, trauma, purpose, and practical alignment.">
-<meta name="keywords" content="TEDx speaker, keynote speaker, spiritual resilience, quadriplegic speaker, trauma-informed, faith-based speaker, LifeCharter, adaptability, transformation">
+<meta name="keywords" content="TEDx speaker, keynote speaker, spiritual resilience, quadriplegic speaker, trauma-informed, faith-based speaker, LifeCharter, adaptability, transformation, Yellow Light">
 <meta name="author" content="AmiLynne Carroll">
 
 <!-- Open Graph -->
@@ -37,6 +37,7 @@
     --gold:#D4AF63;
     --gold-soft:#e0c07a;
     --lavender:#CDBED6;
+    --blush:#E8D5D5;
     --taupe:#B9A9A9;
     --ink:#1a1f2e;
     --muted:#6b6b7a;
@@ -57,9 +58,24 @@
     line-height:1.7;
     -webkit-font-smoothing:antialiased;
     font-weight:400;
+    font-size:17px;
   }
   
-  .wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+  
+  /* Skip to content for accessibility */
+  .skip-link{
+    position:absolute;
+    top:-40px;
+    left:0;
+    background:var(--indigo);
+    color:var(--ivory);
+    padding:8px;
+    text-decoration:none;
+    z-index:10000;
+  }
+  
+  .skip-link:focus{top:0}
   
   /* Navigation */
   nav{
@@ -67,10 +83,10 @@
     top:0;
     left:0;
     right:0;
-    background:rgba(246,241,232,.95);
-    backdrop-filter:blur(10px);
+    background:rgba(246,241,232,.97);
+    backdrop-filter:blur(12px);
     z-index:1000;
-    padding:16px 0;
+    padding:18px 0;
     border-bottom:1px solid var(--line);
   }
   
@@ -82,22 +98,23 @@
   
   .logo{
     font-family:var(--display);
-    font-size:24px;
+    font-size:26px;
     font-weight:600;
     color:var(--indigo);
     text-decoration:none;
+    letter-spacing:-0.01em;
   }
   
   .logo span{color:var(--gold)}
   
   .nav-links{
     display:flex;
-    gap:32px;
+    gap:36px;
     align-items:center;
   }
   
   .nav-links a{
-    font-size:14px;
+    font-size:15px;
     color:var(--ink);
     text-decoration:none;
     font-weight:500;
@@ -109,7 +126,7 @@
   .nav-cta{
     background:var(--indigo);
     color:var(--ivory)!important;
-    padding:10px 20px;
+    padding:12px 24px;
     border-radius:4px;
     font-weight:600!important;
   }
@@ -119,9 +136,9 @@
   /* Hero */
   .hero{
     min-height:100vh;
-    background:linear-gradient(135deg,var(--indigo) 0%,var(--plum) 50%,var(--indigo-soft) 100%);
+    background:linear-gradient(145deg,var(--indigo) 0%,var(--plum) 60%,var(--indigo-soft) 100%);
     color:var(--ivory);
-    padding:140px 0 100px;
+    padding:160px 0 120px;
     position:relative;
     overflow:hidden;
     display:flex;
@@ -131,33 +148,33 @@
   .hero::before{
     content:"";
     position:absolute;
-    top:-30%;
-    right:-20%;
-    width:80%;
+    top:-20%;
+    right:-10%;
+    width:70%;
     height:100%;
-    background:radial-gradient(ellipse,rgba(212,175,99,.12),transparent 60%);
+    background:radial-gradient(ellipse,rgba(212,175,99,.1),transparent 60%);
     pointer-events:none;
   }
   
   .hero::after{
     content:"🦋";
     position:absolute;
-    bottom:40px;
-    right:40px;
-    font-size:60px;
-    opacity:.15;
-    animation:float 6s ease-in-out infinite;
+    bottom:60px;
+    right:60px;
+    font-size:80px;
+    opacity:.08;
+    animation:float 8s ease-in-out infinite;
   }
   
   @keyframes float{
-    0%,100%{transform:translateY(0)}
-    50%{transform:translateY(-20px)}
+    0%,100%{transform:translateY(0) rotate(0deg)}
+    50%{transform:translateY(-25px) rotate(5deg)}
   }
   
   .hero-content{
     display:grid;
-    grid-template-columns:1.2fr 1fr;
-    gap:60px;
+    grid-template-columns:1.3fr 1fr;
+    gap:80px;
     align-items:center;
     position:relative;
     z-index:1;
@@ -165,38 +182,38 @@
   
   .hero-text h1{
     font-family:var(--display);
-    font-size:56px;
+    font-size:58px;
     font-weight:600;
-    line-height:1.1;
-    margin-bottom:24px;
-    letter-spacing:-.01em;
+    line-height:1.08;
+    margin-bottom:28px;
+    letter-spacing:-0.02em;
   }
   
   .hero-text .subheadline{
-    font-size:18px;
-    line-height:1.8;
-    color:#d4d0c8;
-    margin-bottom:40px;
-    max-width:540px;
+    font-size:19px;
+    line-height:1.85;
+    color:#e8e4dc;
+    margin-bottom:44px;
+    max-width:560px;
     font-weight:300;
   }
   
   .hero-buttons{
     display:flex;
-    gap:16px;
+    gap:18px;
     flex-wrap:wrap;
   }
   
   .btn{
     display:inline-flex;
     align-items:center;
-    gap:10px;
+    gap:12px;
     font-family:var(--body);
-    font-size:14px;
+    font-size:15px;
     font-weight:600;
     text-transform:uppercase;
-    letter-spacing:.08em;
-    padding:16px 28px;
+    letter-spacing:.06em;
+    padding:18px 32px;
     border-radius:4px;
     text-decoration:none;
     transition:all .25s;
@@ -212,7 +229,7 @@
   .btn-primary:hover{
     background:var(--gold-soft);
     transform:translateY(-2px);
-    box-shadow:0 8px 24px rgba(212,175,99,.3);
+    box-shadow:0 12px 32px rgba(212,175,99,.35);
   }
   
   .btn-secondary{
@@ -228,14 +245,14 @@
   
   .hero-image{
     position:relative;
-    padding:24px;
+    padding:28px;
   }
   
   .hero-image img{
     width:100%;
-    max-width:420px;
+    max-width:400px;
     border-radius:8px;
-    box-shadow:0 32px 64px rgba(0,0,0,.4);
+    box-shadow:0 40px 80px rgba(0,0,0,.4);
     display:block;
     margin:0 auto;
     position:relative;
@@ -258,7 +275,7 @@
   /* Credibility Bar */
   .credibility{
     background:var(--card);
-    padding:40px 0;
+    padding:32px 0;
     border-bottom:1px solid var(--line);
   }
   
@@ -266,24 +283,24 @@
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
-    gap:40px;
+    gap:32px 48px;
   }
   
   .cred-item{
     display:flex;
     align-items:center;
     gap:10px;
-    font-size:14px;
+    font-size:13px;
     font-weight:600;
     color:var(--indigo);
     text-transform:uppercase;
-    letter-spacing:.05em;
+    letter-spacing:.08em;
   }
   
   .cred-item::before{
     content:"✦";
     color:var(--gold);
-    font-size:16px;
+    font-size:14px;
   }
   
   /* Sections */
@@ -291,22 +308,23 @@
   
   .section-header{
     text-align:center;
-    max-width:700px;
-    margin:0 auto 64px;
+    max-width:760px;
+    margin:0 auto 72px;
   }
   
   .section-header h2{
     font-family:var(--display);
-    font-size:44px;
+    font-size:48px;
     color:var(--indigo);
-    margin-bottom:20px;
+    margin-bottom:24px;
     font-weight:600;
+    letter-spacing:-0.01em;
   }
   
   .section-header p{
-    font-size:18px;
+    font-size:19px;
     color:var(--muted);
-    line-height:1.7;
+    line-height:1.75;
   }
   
   /* Speaker Reel */
@@ -319,32 +337,37 @@
   .speaker-reel h2{
     color:var(--ivory);
     font-family:var(--display);
-    font-size:40px;
-    margin-bottom:20px;
+    font-size:44px;
+    margin-bottom:24px;
   }
   
   .speaker-reel > p{
-    max-width:640px;
-    margin:0 auto 40px;
-    font-size:17px;
-    color:#d4d0c8;
-    line-height:1.8;
+    max-width:680px;
+    margin:0 auto 48px;
+    font-size:18px;
+    color:#d8d4cc;
+    line-height:1.85;
     font-weight:300;
   }
   
-  .video-placeholder{
-    background:rgba(255,255,255,.05);
-    border:2px dashed var(--gold);
-    border-radius:12px;
-    padding:80px 40px;
-    max-width:800px;
+  .video-container{
+    background:rgba(255,255,255,.06);
+    border:2px dashed rgba(212,175,99,.4);
+    border-radius:16px;
+    padding:100px 40px;
+    max-width:860px;
     margin:0 auto;
   }
   
-  .video-placeholder p{
-    font-size:16px;
+  .video-container p{
+    font-size:18px;
     color:var(--lavender);
-    margin-bottom:24px;
+    margin-bottom:28px;
+  }
+  
+  .video-container .btn-primary{
+    background:var(--gold);
+    color:var(--indigo);
   }
   
   /* Why AmiLynne */
@@ -352,74 +375,85 @@
   
   .why-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1.1fr 1fr;
     gap:80px;
     align-items:center;
   }
   
   .why-text h2{
     font-family:var(--display);
-    font-size:40px;
+    font-size:44px;
     color:var(--indigo);
-    margin-bottom:24px;
+    margin-bottom:28px;
   }
   
-  .why-text p{
-    font-size:17px;
+  .why-text > p{
+    font-size:18px;
     color:var(--ink);
-    margin-bottom:20px;
-    line-height:1.8;
+    margin-bottom:24px;
+    line-height:1.85;
   }
   
   .why-quote{
     background:var(--card);
     border-left:4px solid var(--gold);
-    padding:32px;
-    border-radius:0 12px 12px 0;
-    margin-top:32px;
+    padding:36px;
+    border-radius:0 16px 16px 0;
+    margin-top:40px;
   }
   
   .why-quote p{
     font-family:var(--display);
-    font-size:22px;
+    font-size:24px;
     font-style:italic;
     color:var(--indigo);
-    margin-bottom:16px;
+    margin-bottom:20px;
+    line-height:1.5;
   }
   
   .why-quote cite{
-    font-size:14px;
+    font-size:15px;
     color:var(--muted);
     font-style:normal;
+    font-weight:600;
   }
   
   .why-image img{
     width:100%;
-    border-radius:12px;
-    box-shadow:0 24px 48px rgba(31,49,91,.15);
+    border-radius:16px;
+    box-shadow:0 32px 64px rgba(31,49,91,.15);
   }
   
   /* Keynotes */
   .keynotes{background:var(--card)}
   
+  .keynote-intro{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 64px;
+    font-size:19px;
+    color:var(--muted);
+    line-height:1.8;
+  }
+  
   .keynote-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
     gap:32px;
   }
   
   .keynote-card{
     background:var(--ivory);
     border:1px solid var(--line);
-    border-radius:16px;
-    padding:40px;
-    transition:all .3s;
+    border-radius:20px;
+    padding:44px;
+    transition:all .35s;
     position:relative;
   }
   
   .keynote-card:hover{
     transform:translateY(-8px);
-    box-shadow:0 20px 40px rgba(31,49,91,.1);
+    box-shadow:0 24px 56px rgba(31,49,91,.12);
     border-color:var(--gold);
   }
   
@@ -429,104 +463,203 @@
     top:0;
     left:0;
     right:0;
-    height:4px;
+    height:5px;
     background:linear-gradient(90deg,var(--gold),var(--gold-soft));
-    border-radius:16px 16px 0 0;
+    border-radius:20px 20px 0 0;
     opacity:0;
-    transition:opacity .3s;
+    transition:opacity .35s;
   }
   
   .keynote-card:hover::before{opacity:1}
   
   .keynote-card .icon{
-    font-size:40px;
-    margin-bottom:20px;
+    font-size:44px;
+    margin-bottom:24px;
   }
   
   .keynote-card h3{
     font-family:var(--display);
-    font-size:26px;
+    font-size:30px;
     color:var(--indigo);
-    margin-bottom:16px;
+    margin-bottom:8px;
+    line-height:1.2;
   }
   
-  .keynote-card p{
-    font-size:15px;
-    color:var(--muted);
-    line-height:1.7;
-    margin-bottom:20px;
-  }
-  
-  .keynote-card .audience{
-    font-size:13px;
+  .keynote-card .subtitle{
+    font-size:16px;
     color:var(--gold);
     font-weight:600;
-    text-transform:uppercase;
-    letter-spacing:.05em;
+    margin-bottom:20px;
+    font-style:italic;
   }
   
-  /* Audience Pathways */
-  .audiences{background:var(--indigo);color:var(--ivory)}
+  .keynote-card .best-for{
+    font-size:13px;
+    color:var(--muted);
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    margin-bottom:20px;
+    padding-bottom:20px;
+    border-bottom:1px solid var(--line);
+  }
   
-  .audiences h2{color:var(--ivory)}
+  .keynote-card > p{
+    font-size:16px;
+    color:var(--ink);
+    line-height:1.75;
+    margin-bottom:28px;
+  }
   
-  .audience-grid{
+  .takeaways{
+    background:rgba(212,175,99,.08);
+    border-radius:12px;
+    padding:24px;
+  }
+  
+  .takeaways h4{
+    font-size:13px;
+    color:var(--indigo);
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    margin-bottom:16px;
+    font-weight:700;
+  }
+  
+  .takeaways ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+  
+  .takeaways li{
+    font-size:15px;
+    color:var(--ink);
+    padding:8px 0 8px 28px;
+    position:relative;
+    line-height:1.6;
+  }
+  
+  .takeaways li::before{
+    content:"→";
+    position:absolute;
+    left:0;
+    color:var(--gold);
+    font-weight:700;
+  }
+  
+  /* Additional Topics */
+  .additional-topics{
+    margin-top:64px;
+    padding-top:64px;
+    border-top:2px solid var(--line);
+  }
+  
+  .additional-topics h3{
+    font-family:var(--display);
+    font-size:32px;
+    color:var(--indigo);
+    text-align:center;
+    margin-bottom:40px;
+  }
+  
+  .additional-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:24px;
   }
   
-  .audience-card{
-    background:rgba(255,255,255,.05);
-    border:1px solid rgba(212,175,99,.2);
+  .additional-card{
+    background:var(--ivory);
+    border:1px solid var(--line);
     border-radius:12px;
-    padding:32px;
+    padding:28px;
+    transition:all .2s;
+  }
+  
+  .additional-card:hover{
+    border-color:var(--gold);
+    transform:translateY(-4px);
+  }
+  
+  .additional-card h4{
+    font-family:var(--display);
+    font-size:22px;
+    color:var(--indigo);
+    margin-bottom:8px;
+  }
+  
+  .additional-card p{
+    font-size:15px;
+    color:var(--muted);
+    line-height:1.6;
+  }
+  
+  /* Audiences */
+  .audiences{background:linear-gradient(135deg,var(--indigo) 0%,var(--plum) 100%);color:var(--ivory)}
+  
+  .audiences h2{color:var(--ivory)}
+  
+  .audience-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:28px;
+  }
+  
+  .audience-card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(212,175,99,.25);
+    border-radius:16px;
+    padding:36px;
     transition:all .3s;
   }
   
   .audience-card:hover{
     background:rgba(255,255,255,.1);
     border-color:var(--gold);
-    transform:translateY(-4px);
+    transform:translateY(-6px);
   }
   
   .audience-card h4{
     font-family:var(--display);
-    font-size:22px;
+    font-size:26px;
     color:var(--gold);
-    margin-bottom:12px;
+    margin-bottom:16px;
   }
   
   .audience-card p{
-    font-size:15px;
-    color:#d4d0c8;
-    line-height:1.6;
+    font-size:16px;
+    color:#d8d4cc;
+    line-height:1.7;
   }
   
-  /* Takeaways */
-  .takeaways{background:var(--ivory)}
+  /* Takeaways Section */
+  .takeaways-section{background:var(--ivory)}
   
-  .takeaway-list{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:24px;
+  .takeaways-list{
     max-width:900px;
     margin:0 auto;
   }
   
   .takeaway-item{
     display:flex;
-    gap:20px;
+    gap:24px;
     align-items:flex-start;
     background:var(--card);
-    padding:28px;
-    border-radius:12px;
+    padding:32px;
+    border-radius:16px;
     border:1px solid var(--line);
+    margin-bottom:20px;
+    transition:all .2s;
+  }
+  
+  .takeaway-item:hover{
+    border-color:var(--gold);
+    transform:translateX(8px);
   }
   
   .takeaway-item .num{
-    width:48px;
-    height:48px;
+    width:56px;
+    height:56px;
     background:var(--gold);
     color:var(--indigo);
     border-radius:50%;
@@ -534,21 +667,22 @@
     align-items:center;
     justify-content:center;
     font-family:var(--display);
-    font-size:20px;
+    font-size:24px;
     font-weight:700;
     flex-shrink:0;
   }
   
   .takeaway-item h4{
     font-family:var(--display);
-    font-size:20px;
+    font-size:22px;
     color:var(--indigo);
-    margin-bottom:8px;
+    margin-bottom:10px;
   }
   
   .takeaway-item p{
-    font-size:15px;
+    font-size:16px;
     color:var(--muted);
+    line-height:1.7;
   }
   
   /* Formats */
@@ -556,27 +690,22 @@
   
   .format-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:32px;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:28px;
   }
   
   .format-card{
-    text-align:center;
-    padding:48px 32px;
     background:var(--ivory);
-    border-radius:16px;
     border:2px solid var(--line);
+    border-radius:20px;
+    padding:44px 36px;
     transition:all .3s;
   }
   
   .format-card:hover{
     border-color:var(--gold);
-    transform:translateY(-4px);
-  }
-  
-  .format-card.featured{
-    border-color:var(--gold);
-    background:linear-gradient(135deg,var(--ivory) 0%,#faf7f0 100%);
+    transform:translateY(-6px);
+    box-shadow:0 20px 48px rgba(31,49,91,.1);
   }
   
   .format-card h3{
@@ -589,24 +718,16 @@
   .format-card .duration{
     font-size:14px;
     color:var(--gold);
-    font-weight:600;
+    font-weight:700;
     text-transform:uppercase;
     letter-spacing:.1em;
-    margin-bottom:24px;
+    margin-bottom:20px;
   }
   
   .format-card p{
-    font-size:15px;
+    font-size:16px;
     color:var(--muted);
-    line-height:1.7;
-    margin-bottom:24px;
-  }
-  
-  .format-card .price{
-    font-family:var(--display);
-    font-size:36px;
-    color:var(--indigo);
-    font-weight:600;
+    line-height:1.75;
   }
   
   /* Testimonials */
@@ -614,30 +735,26 @@
   
   .testimonials h2{color:var(--ivory)}
   
-  .testimonial-slider{
+  .testimonial-placeholder{
     max-width:800px;
-    margin:0 auto;
+    margin:0 auto 32px;
+    padding:48px;
+    background:rgba(255,255,255,.05);
+    border:2px dashed rgba(212,175,99,.3);
+    border-radius:16px;
   }
   
-  .testimonial-text{
+  .testimonial-placeholder p{
     font-family:var(--display);
-    font-size:28px;
+    font-size:24px;
     font-style:italic;
-    line-height:1.5;
-    margin-bottom:32px;
-    color:var(--ivory);
+    color:var(--lavender);
+    margin-bottom:20px;
   }
   
-  .testimonial-author{
+  .testimonial-placeholder .author{
     font-size:16px;
     color:var(--gold);
-  }
-  
-  .testimonial-author span{
-    display:block;
-    font-size:14px;
-    color:#d4d0c8;
-    margin-top:8px;
   }
   
   /* Books & Media */
@@ -645,70 +762,90 @@
   
   .media-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:40px;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:36px;
   }
   
-  .media-item{
+  .media-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:36px;
     text-align:center;
+    transition:all .3s;
   }
   
-  .media-item img{
-    width:100%;
-    max-width:200px;
-    border-radius:8px;
-    box-shadow:0 16px 32px rgba(31,49,91,.15);
+  .media-card:hover{
+    border-color:var(--gold);
+    transform:translateY(-6px);
+    box-shadow:0 16px 40px rgba(31,49,91,.1);
+  }
+  
+  .media-card .icon{
+    font-size:48px;
     margin-bottom:20px;
   }
   
-  .media-item h4{
+  .media-card h4{
     font-family:var(--display);
-    font-size:22px;
+    font-size:24px;
     color:var(--indigo);
-    margin-bottom:8px;
+    margin-bottom:12px;
   }
   
-  .media-item p{
-    font-size:14px;
+  .media-card p{
+    font-size:15px;
     color:var(--muted);
+    line-height:1.7;
   }
   
   /* Resources */
   .resources{background:var(--card)}
   
-  .resource-list{
+  .resources-intro{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 56px;
+    font-size:18px;
+    color:var(--muted);
+  }
+  
+  .resource-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:24px;
-    max-width:800px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+    max-width:1000px;
     margin:0 auto;
   }
   
   .resource-item{
     display:flex;
     align-items:center;
-    gap:16px;
-    padding:24px;
+    gap:18px;
+    padding:24px 28px;
     background:var(--ivory);
-    border-radius:12px;
     border:1px solid var(--line);
+    border-radius:12px;
     text-decoration:none;
     color:var(--ink);
-    transition:all .2s;
+    transition:all .25s;
   }
   
   .resource-item:hover{
     border-color:var(--gold);
-    transform:translateX(8px);
+    background:var(--card);
+    transform:translateX(12px);
+    box-shadow:0 8px 24px rgba(31,49,91,.08);
   }
   
   .resource-item .icon{
-    font-size:28px;
+    font-size:32px;
+    flex-shrink:0;
   }
   
   .resource-item h4{
     font-family:var(--display);
-    font-size:18px;
+    font-size:19px;
     color:var(--indigo);
     margin-bottom:4px;
   }
@@ -719,13 +856,20 @@
   }
   
   /* Contact Form */
-  .contact{background:var(--indigo);color:var(--ivory)}
+  .contact{background:linear-gradient(145deg,var(--indigo) 0%,var(--plum) 100%);color:var(--ivory)}
   
   .contact h2{color:var(--ivory)}
   
   .contact-form{
-    max-width:600px;
+    max-width:800px;
     margin:0 auto;
+  }
+  
+  .form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+    margin-bottom:24px;
   }
   
   .form-group{
@@ -736,7 +880,7 @@
     display:block;
     font-size:14px;
     font-weight:600;
-    margin-bottom:8px;
+    margin-bottom:10px;
     color:var(--lavender);
   }
   
@@ -744,13 +888,13 @@
   .form-group textarea,
   .form-group select{
     width:100%;
-    padding:14px 18px;
+    padding:16px 20px;
     border:1px solid rgba(255,255,255,.2);
-    border-radius:8px;
-    background:rgba(255,255,255,.05);
+    border-radius:10px;
+    background:rgba(255,255,255,.06);
     color:var(--ivory);
     font-family:var(--body);
-    font-size:15px;
+    font-size:16px;
     transition:all .2s;
   }
   
@@ -767,10 +911,9 @@
     color:rgba(255,255,255,.4);
   }
   
-  .form-row{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:24px;
+  .form-group select option{
+    background:var(--indigo);
+    color:var(--ivory);
   }
   
   /* Final CTA */
@@ -783,15 +926,23 @@
   
   .final-cta h2{
     font-family:var(--display);
-    font-size:48px;
-    margin-bottom:20px;
+    font-size:52px;
+    margin-bottom:24px;
   }
   
-  .final-cta p{
-    font-size:18px;
-    color:#d4d0c8;
-    max-width:600px;
-    margin:0 auto 40px;
+  .final-cta > p{
+    font-size:20px;
+    color:#d8d4cc;
+    max-width:680px;
+    margin:0 auto 44px;
+    line-height:1.8;
+  }
+  
+  .final-cta-buttons{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
   }
   
   /* Footer */
@@ -809,8 +960,8 @@
   }
   
   footer p{
-    font-size:14px;
-    margin-bottom:8px;
+    font-size:15px;
+    margin-bottom:12px;
   }
   
   footer a{
@@ -818,22 +969,28 @@
     text-decoration:none;
   }
   
+  footer a:hover{text-decoration:underline}
+  
   /* Responsive */
   @media(max-width:900px){
     .hero-content,.why-grid{grid-template-columns:1fr}
-    .hero-text h1{font-size:42px}
+    .hero-text h1{font-size:44px}
     .hero-image{display:none}
     .nav-links{display:none}
     .form-row{grid-template-columns:1fr}
-    .section-header h2{font-size:36px}
-    .final-cta h2{font-size:36px}
+    .section-header h2{font-size:38px}
+    .final-cta h2{font-size:40px}
+    .keynote-grid{grid-template-columns:1fr}
+    body{font-size:16px}
   }
 </style>
 </head>
 <body>
 
+<a href="#main" class="skip-link">Skip to main content</a>
+
 <!-- Navigation -->
-<nav>
+<nav role="navigation" aria-label="Main navigation">
   <div class="wrap">
     <a href="#" class="logo">AmiLynne <span>Speaks</span></a>
     <div class="nav-links">
@@ -845,12 +1002,14 @@
   </div>
 </nav>
 
+<main id="main">
+
 <!-- Hero Section -->
-<section class="hero">
+<section class="hero" aria-labelledby="hero-heading">
   <div class="wrap">
     <div class="hero-content">
       <div class="hero-text">
-        <h1>When life changes without permission, alignment becomes the way forward.</h1>
+        <h1 id="hero-heading">When life changes without permission, alignment becomes the way forward.</h1>
         <p class="subheadline">AmiLynne "Babs" Carroll is a TEDx speaker, author, spiritual transformation mentor, quadriplegic speaker, and creator of LifeCharter. Through faith, adaptability, and practical alignment, she helps audiences reclaim clarity, courage, and command when life no longer follows the plan.</p>
         <div class="hero-buttons">
           <a href="#contact" class="btn btn-primary">Book AmiLynne to Speak</a>
@@ -865,7 +1024,7 @@
 </section>
 
 <!-- Credibility Bar -->
-<section class="credibility">
+<section class="credibility" aria-label="Credentials">
   <div class="wrap">
     <div class="credibility-items">
       <span class="cred-item">TEDx Speaker</span>
@@ -879,11 +1038,11 @@
 </section>
 
 <!-- Speaker Reel Section -->
-<section class="speaker-reel" id="reel">
+<section class="speaker-reel" id="reel" aria-labelledby="reel-heading">
   <div class="wrap">
-    <h2>Watch AmiLynne Speak</h2>
+    <h2 id="reel-heading">Watch AmiLynne Speak</h2>
     <p>AmiLynne brings together personal story, spiritual truth, tenderness, humor, and practical transformation. Her message does more than inspire. It helps audiences pause, breathe, remember who they are, and take the next faithful step.</p>
-    <div class="video-placeholder">
+    <div class="video-container">
       <p>🎬 Speaker Reel Coming Soon</p>
       <a href="#contact" class="btn btn-primary">Request Speaking Information</a>
     </div>
@@ -891,11 +1050,11 @@
 </section>
 
 <!-- Why AmiLynne Speaks -->
-<section class="why-amilynne" id="why">
+<section class="why-amilynne" id="why" aria-labelledby="why-heading">
   <div class="wrap">
     <div class="why-grid">
       <div class="why-text">
-        <h2>Why AmiLynne Speaks</h2>
+        <h2 id="why-heading">Why AmiLynne Speaks</h2>
         <p>AmiLynne speaks because she knows what it is to have life interrupted, identity shaken, and the body become unfamiliar territory.</p>
         <p>After a stroke left her quadriplegic, AmiLynne rebuilt her life, voice, work, and calling through faith, adaptability, and the sacred practice of taking one faithful step at a time. Her message is not about pretending hardship is easy. It is about discovering that limitation is not the end of command.</p>
         <div class="why-quote">
@@ -904,152 +1063,251 @@
         </div>
       </div>
       <div class="why-image">
-        <img src="https://ik.imagekit.io/amilynne/Babs%20Headshots/ChatGPT%20Image%20May%205,%202026,%2002_57_59%20PM.png?updatedAt=1778014703147" alt="AmiLynne Carroll - Spiritual Transformation Mentor">
+        <img src="https://ik.imagekit.io/amilynne/Babs%20Headshots/ChatGPT%20Image%20May%205,%202026,%2002_57_59%20PM.png?updatedAt=1778014703147" alt="AmiLynne Carroll speaking">
       </div>
     </div>
   </div>
 </section>
 
 <!-- Signature Keynotes -->
-<section class="keynotes" id="keynotes">
+<section class="keynotes" id="keynotes" aria-labelledby="keynotes-heading">
   <div class="wrap">
     <div class="section-header">
-      <h2>Signature Keynotes</h2>
-      <p>Transformative talks that meet your audience where they are and guide them toward alignment</p>
+      <h2 id="keynotes-heading">Signature Keynotes</h2>
     </div>
+    <p class="keynote-intro">AmiLynne's keynotes are designed to meet audiences in the holy middle: the space between what happened and what becomes possible next. Each message blends lived experience, spiritual depth, trauma-informed wisdom, and practical next steps.</p>
+    
     <div class="keynote-grid">
-      <div class="keynote-card">
-        <div class="icon">🦋</div>
-        <h3>The LifeCharter: Designing a Life of Alignment</h3>
-        <p>Introduce your audience to the 12-dimension framework for intentional living. From career to relationships, spirituality to finances—discover how to build a life that reflects your true values, not someone else's expectations.</p>
-        <span class="audience">Ideal for: Leadership, Personal Development, Corporate</span>
-      </div>
-      <div class="keynote-card">
+      <!-- Keynote 1 -->
+      <article class="keynote-card">
+        <div class="icon">⚡</div>
+        <h3>Power of Adaptability</h3>
+        <p class="subtitle">Reclaim Command When Life Changes Without Permission</p>
+        <p class="best-for">Best for: Healthcare, disability inclusion, leadership, faith-based events, universities, resilience conferences</p>
+        <p>When a stroke left AmiLynne "Babs" Carroll quadriplegic, life did not simply change. It demanded a new relationship with body, voice, identity, faith, and purpose. In this powerful keynote, AmiLynne shows audiences that adaptability is not passive acceptance. It is sacred command in motion.</p>
+        <p>She helps audiences understand how to reclaim agency when circumstances cannot be controlled, how to respond rather than collapse, and how to take the next faithful step when the old map no longer works.</p>
+        <div class="takeaways">
+          <h4>Audience Takeaways</h4>
+          <ul>
+            <li>How to reclaim command in uncontrollable circumstances</li>
+            <li>Why adaptability is spiritual strength, not surrender</li>
+            <li>How to move from fear-driven reaction to aligned response</li>
+            <li>A practical framework for pausing, assessing, and deciding</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Keynote 2 -->
+      <article class="keynote-card">
         <div class="icon">🛑</div>
-        <h3>The Yellow Light: From Reaction to Response</h3>
-        <p>Learn the transformative practice of the Yellow Yield—creating sacred pause between stimulus and response. Perfect for audiences dealing with overwhelm, anxiety, or the constant pressure to react.</p>
-        <span class="audience">Ideal for: Healthcare, Education, High-Stress Professions</span>
+        <h3>Yellow Light Leadership</h3>
+        <p class="subtitle">Pause. Assess. Decide.</p>
+        <p class="best-for">Best for: Corporate leadership, nonprofit teams, ministry leaders, educators, entrepreneurs, caregivers</p>
+        <p>Most people live between red-light panic and green-light performance. But transformation often begins in the yellow light: the sacred pause where wisdom returns.</p>
+        <p>In this keynote, AmiLynne teaches the Yellow Light practice as a leadership, communication, and resilience tool. Audiences learn how to slow reaction, listen beneath pressure, and take the next faithful step with clarity.</p>
+        <div class="takeaways">
+          <h4>Audience Takeaways</h4>
+          <ul>
+            <li>How to interrupt reactive decision-making</li>
+            <li>How to use the pause as a leadership tool</li>
+            <li>How to communicate from alignment instead of urgency</li>
+            <li>How to build steadier teams, families, and communities</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Keynote 3 -->
+      <article class="keynote-card">
+        <div class="icon">💫</div>
+        <h3>Fear Is Misunderstood Imagination</h3>
+        <p class="subtitle">Reclaiming the Creative Power Beneath Anxiety</p>
+        <p class="best-for">Best for: Personal growth events, colleges, women's conferences, faith communities, mental wellness events</p>
+        <p>What if fear is not the enemy? What if fear is imagination that has forgotten its holy assignment?</p>
+        <p>AmiLynne reframes fear as creative energy that has been pointed toward threat instead of possibility. Through story, spiritual insight, and practical tools, she helps audiences transform fear from a prison into a doorway.</p>
+        <div class="takeaways">
+          <h4>Audience Takeaways</h4>
+          <ul>
+            <li>A fresh, compassionate way to understand fear</li>
+            <li>How to redirect anxious imagination toward vision</li>
+            <li>How to calm the nervous system without shaming the soul</li>
+            <li>How to take action when fear is present but no longer in charge</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Keynote 4 -->
+      <article class="keynote-card">
+        <div class="icon">🧭</div>
+        <h3>From Trauma to True North</h3>
+        <p class="subtitle">Designing a Life After the Life You Expected</p>
+        <p class="best-for">Best for: Trauma-informed events, recovery communities, coaching conferences, healthcare, caregiver events, spiritual growth gatherings</p>
+        <p>Trauma can fracture identity, blur purpose, and make the future feel like foreign land. But trauma does not get the final authorship.</p>
+        <p>In this keynote, AmiLynne guides audiences through the process of returning to their True North: values, identity, vision, purpose, and strategy. This is not a speech about "getting over it." It is about learning to live truthfully after what happened.</p>
+        <div class="takeaways">
+          <h4>Audience Takeaways</h4>
+          <ul>
+            <li>How to name what happened without becoming what happened</li>
+            <li>How to reconnect with values and purpose</li>
+            <li>How to begin designing life after disruption</li>
+            <li>How to move from survival identity to sacred authorship</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Keynote 5 -->
+      <article class="keynote-card">
+        <div class="icon">👂</div>
+        <h3>Conversations of Consequence</h3>
+        <p class="subtitle">Hearing the Still Small Voice in a Loud World</p>
+        <p class="best-for">Best for: Faith communities, retreats, churches, spiritual growth conferences, leadership events</p>
+        <p>The world is loud. Fear is loud. Pressure is loud. But the voice that changes everything is often still, small, and easily overlooked.</p>
+        <p>AmiLynne helps audiences recognize the difference between noise, fear, ego, urgency, and divine guidance. This keynote invites people into deeper listening, courageous honesty, and conversations that actually change a life.</p>
+        <div class="takeaways">
+          <h4>Audience Takeaways</h4>
+          <ul>
+            <li>How to listen beneath fear and pressure</li>
+            <li>How to recognize sacred guidance in ordinary moments</li>
+            <li>How to have healing conversations without abandoning truth</li>
+            <li>How to build a life guided by divine alignment</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Keynote 6 -->
+      <article class="keynote-card">
+        <div class="icon">🔮</div>
+        <h3>Sacred Alchemy</h3>
+        <p class="subtitle">Bridging Brain, Body, and Soul on the Path to Wholeness</p>
+        <p class="best-for">Best for: Wellness events, healthcare, trauma recovery, spiritual conferences, mind-body-spirit gatherings</p>
+        <p>Wholeness is not the absence of limitation. Wholeness is the remembering of truth across brain, body, and soul.</p>
+        <p>In this keynote, AmiLynne explores the sacred relationship between thought, body, faith, identity, and healing. She invites audiences to stop treating the body as a battlefield and begin seeing it as part of the conversation.</p>
+        <div class="takeaways">
+          <h4>Audience Takeaways</h4>
+          <ul>
+            <li>How to relate to the body with compassion and wisdom</li>
+            <li>How trauma, thought, and identity shape lived experience</li>
+            <li>How spiritual truth can support practical healing</li>
+            <li>How to pursue wholeness without demanding perfection</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <!-- Additional Topics -->
+    <div class="additional-topics">
+      <h3>Additional Topics Available</h3>
+      <div class="additional-grid">
+        <div class="additional-card">
+          <h4>The Next Faithful Step</h4>
+          <p>How to Move Forward When You Cannot See the Whole Path</p>
+        </div>
+        <div class="additional-card">
+          <h4>Limitation Is Not the End of Command</h4>
+          <p>The Spiritual Practice of Agency</p>
+        </div>
+        <div class="additional-card">
+          <h4>One Means Not Two</h4>
+          <p>Returning to Unity When Life Feels Divided</p>
+        </div>
+        <div class="additional-card">
+          <h4>Hope Is Not Fragile</h4>
+          <p>Building a Life That Can Hold Both Grief and Grace</p>
+        </div>
+        <div class="additional-card">
+          <h4>The LifeCharter Method</h4>
+          <p>Turning Inner Clarity Into an Outer Life</p>
+        </div>
+        <div class="additional-card">
+          <h4>Becoming After the Breaking</h4>
+          <p>When the Life You Lost Becomes the Life That Finds You</p>
+        </div>
       </div>
-      <div class="keynote-card">
-        <div class="icon">✨</div>
-        <h3>Remembering Who You Are</h3>
-        <p>Transformation isn't about fixing what's broken—it's about remembering what's true. This talk guides audiences through the journey from survival patterns to sacred identity, from fear to faith.</p>
-        <span class="audience">Ideal for: Spiritual, Recovery, Trauma-Informed Events</span>
-      </div>
-      <div class="keynote-card">
-        <div class="icon">🌱</div>
-        <h3>Adaptability as Spiritual Practice</h3>
-        <p>For faith-based and spiritual audiences: discover how limitation becomes the doorway to deeper trust, and how adaptability is not surrender but sacred responsiveness to life's unfolding.</p>
-        <span class="audience">Ideal for: Churches, Retreats, Faith-Based Organizations</span>
-      </div>
-      <div class="keynote-card">
-        <div class="icon">🎯</div>
-        <h3>The Next Faithful Step</h3>
-        <p>When the path ahead is unclear and the mountain seems too high, the only thing required is the next faithful step. A practical, encouraging message for anyone facing uncertainty or transition.</p>
-        <span class="audience">Ideal for: Universities, Career Transitions, Life Transitions</span>
-      </div>
-      <div class="keynote-card">
-        <div class="icon">♿</div>
-        <h3>Command from the Chair: Disability as Teacher</h3>
-        <p>An honest, tender, and empowering message about living with disability—whether visible or invisible. For accessibility events, healthcare professionals, and anyone seeking to understand resilience from the inside out.</p>
-        <span class="audience">Ideal for: Disability Events, Healthcare, Accessibility Advocacy</span>
-      </div>
-    </div    </div>
+    </div>
   </div>
 </section>
 
 <!-- Audience Pathways -->
-<section class="audiences" id="audiences">
+<section class="audiences" id="audiences" aria-labelledby="audiences-heading">
   <div class="wrap">
     <div class="section-header">
-      <h2>Audience Pathways</h2>
-      <p>AmiLynne's message resonates across diverse communities and contexts</p>
+      <h2 id="audiences-heading">Who AmiLynne Speaks To</h2>
     </div>
     <div class="audience-grid">
-      <div class="audience-card">
-        <h4>Conference Organizers</h4>
-        <p>Keynotes that inspire action, not just applause. Practical frameworks attendees can implement immediately.</p>
-      </div>
-      <div class="audience-card">
-        <h4>Churches & Faith Communities</h4>
-        <p>Messages rooted in spiritual truth without religious cliché. Faith that meets people in their real lives.</p>
-      </div>
-      <div class="audience-card">
-        <h4>Healthcare Organizations</h4>
-        <p>Trauma-informed, patient-centered perspectives from someone who has been on both sides of the care equation.</p>
-      </div>
-      <div class="audience-card">
-        <h4>Universities & Colleges</h4>
-        <p>Life design, career clarity, and the courage to build a life that actually fits who you are.</p>
-      </div>
-      <div class="audience-card">
-        <h4>Nonprofits & Mission-Driven</h4>
-        <p>Sustainable service, preventing burnout, and staying aligned while doing meaningful work.</p>
-      </div>
-      <div class="audience-card">
+      <article class="audience-card">
+        <h4>Faith Communities</h4>
+        <p>Spiritual resilience, divine identity, prayer, purpose, suffering, hope, and practical faith.</p>
+      </article>
+      <article class="audience-card">
+        <h4>Healthcare & Caregiver Events</h4>
+        <p>Adaptability, patient humanity, caregiver resilience, invisible labor, dignity, and hope.</p>
+      </article>
+      <article class="audience-card">
         <h4>Disability & Accessibility Events</h4>
-        <p>Authentic representation, lived experience, and the truth about resilience from a quadriplegic speaker.</p>
-      </div>
-      <div class="audience-card">
-        <h4>Leadership Retreats</h4>
-        <p>The inner work of leadership—alignment, clarity, and leading from a centered place.</p>
-      </div>
-      <div class="audience-card">
-        <h4>Personal Development</h4>
-        <p>Transformation that lasts because it starts from the inside out, not the outside in.</p>
-      </div>
+        <p>Living beyond assumptions, accessibility, dignity, interdependence, and agency.</p>
+      </article>
+      <article class="audience-card">
+        <h4>Leadership & Corporate Events</h4>
+        <p>Aligned decision-making, adaptability, communication, resilience, and purpose under pressure.</p>
+      </article>
+      <article class="audience-card">
+        <h4>Women's & Personal Growth Conferences</h4>
+        <p>Identity, healing, fear, self-trust, vision, spiritual clarity, and becoming.</p>
+      </article>
+      <article class="audience-card">
+        <h4>Colleges & Universities</h4>
+        <p>Courage, identity, resilience, purpose, fear, adaptability, and building a meaningful life.</p>
+      </article>
     </div>
   </div>
 </section>
 
 <!-- What Audiences Leave With -->
-<section class="takeaways" id="takeaways">
+<section class="takeaways-section" id="takeaways" aria-labelledby="takeaways-heading">
   <div class="wrap">
     <div class="section-header">
-      <h2>What Audiences Leave With</h2>
-      <p>Every keynote is designed to create lasting transformation, not just momentary inspiration</p>
+      <h2 id="takeaways-heading">What Audiences Leave With</h2>
     </div>
-    <div class="takeaway-list">
+    <div class="takeaways-list">
       <div class="takeaway-item">
         <div class="num">1</div>
         <div>
-          <h4>Clarity of Purpose</h4>
-          <p>A clearer sense of who they are and what matters most, cutting through the noise of expectation and obligation.</p>
+          <h4>A Renewed Sense of Agency</h4>
+          <p>In circumstances they cannot fully control, audiences discover they still have command over their response, their alignment, and their next step.</p>
         </div>
       </div>
       <div class="takeaway-item">
         <div class="num">2</div>
         <div>
-          <h4>Practical Tools</h4>
-          <p>Concrete frameworks like the Yellow Light and LifeCharter dimensions they can apply immediately.</p>
+          <h4>A Practical Pause-and-Respond Framework</h4>
+          <p>The Yellow Light practice gives them a tool for pressure, fear, and change—creating space between stimulus and response where wisdom lives.</p>
         </div>
       </div>
       <div class="takeaway-item">
         <div class="num">3</div>
         <div>
-          <h4>Permission to Pause</h4>
-          <p>Validation that slowing down, reassessing, and realigning is not weakness—it's wisdom.</p>
+          <h4>Language for Navigating Trauma</h4>
+          <p>Without becoming identified by what happened, they gain words and concepts to name their experience and move through it with dignity.</p>
         </div>
       </div>
       <div class="takeaway-item">
         <div class="num">4</div>
         <div>
-          <h4>Courage to Act</h4>
-          <p>The confidence to take the next faithful step, even when the whole path isn't visible.</p>
+          <h4>A Deeper Connection to Faith & Purpose</h4>
+          <p>Spiritual clarity emerges—not as escape from difficulty, but as the ground beneath their feet when difficulty comes.</p>
         </div>
       </div>
       <div class="takeaway-item">
         <div class="num">5</div>
         <div>
-          <h4>Hope & Possibility</h4>
-          <p>A renewed sense that change is possible, limitation is not the end, and alignment is always within reach.</p>
+          <h4>A Clear Next Faithful Step</h4>
+          <p>Not a five-year plan, but one actionable step they can take immediately to move from where they are toward where they're called to be.</p>
         </div>
       </div>
       <div class="takeaway-item">
         <div class="num">6</div>
         <div>
-          <h4>Language for the Journey</h4>
-          <p>Words and concepts that help them articulate their own experience and continue the conversation long after the event.</p>
+          <h4>A Reminder That Limitation Is Not the End of Command</h4>
+          <p>Whether facing physical limitation, circumstantial constraint, or emotional exhaustion, they remember that agency lives in alignment, not ability.</p>
         </div>
       </div>
     </div>
@@ -1057,111 +1315,169 @@
 </section>
 
 <!-- Speaking Formats -->
-<section class="formats" id="formats">
+<section class="formats" id="formats" aria-labelledby="formats-heading">
   <div class="wrap">
     <div class="section-header">
-      <h2>Speaking Formats</h2>
-      <p>Flexible options to meet your event's unique needs</p>
+      <h2 id="formats-heading">Speaking Formats</h2>
     </div>
     <div class="format-grid">
-      <div class="format-card">
+      <article class="format-card">
         <h3>Keynote</h3>
-        <div class="duration">45-60 Minutes</div>
-        <p>A powerful, focused message designed to inspire, challenge, and equip your entire audience. Includes Q&A when time permits.</p>
-        <div class="price">$5,000</div>
-      </div>
-      <div class="format-card featured">
+        <div class="duration">30, 45, or 60 Minutes</div>
+        <p>A powerful, focused message designed to inspire, challenge, and transform your entire audience. Perfect for conferences, conventions, and large gatherings.</p>
+      </article>
+      <article class="format-card">
         <h3>Workshop</h3>
-        <div class="duration">Half-Day (3 Hours)</div>
-        <p>Interactive, hands-on experience where participants work through LifeCharter frameworks and leave with personalized action plans.</p>
-        <div class="price">$8,500</div>
-      </div>
-      <div class="format-card">
-        <h3>Retreat Experience</h3>
-        <div class="duration">Full Day or Multi-Day</div>
-        <p>Deep-dive transformation for smaller groups. Intensive alignment work, spiritual direction, and lasting change.</p>
-        <div class="price">Custom</div>
-      </div>
+        <div class="duration">90 Minutes to Half Day</div>
+        <p>Interactive, hands-on experience where participants work through LifeCharter frameworks and leave with personalized action plans and practical tools.</p>
+      </article>
+      <article class="format-card">
+        <h3>Fireside Chat</h3>
+        <div class="duration">Conversational Format</div>
+        <p>An intimate, conversational format perfect for smaller groups, leadership circles, or when you want audience interaction and Q&A throughout.</p>
+      </article>
+      <article class="format-card">
+        <h3>Panelist</h3>
+        <div class="duration">Flexible</div>
+        <p>AmiLynne brings depth and perspective to panels on disability, faith, resilience, trauma, leadership, and personal transformation.</p>
+      </article>
+      <article class="format-card">
+        <h3>Retreat Session</h3>
+        <div class="duration">Reflective & Experiential</div>
+        <p>Deep-dive transformation for smaller groups. Intensive alignment work, spiritual direction, and space for genuine transformation.</p>
+      </article>
+      <article class="format-card">
+        <h3>Virtual Keynote</h3>
+        <div class="duration">Zoom or Livestream</div>
+        <p>The same powerful message delivered virtually. AmiLynne has extensive experience engaging online audiences with presence and connection.</p>
+      </article>
+      <article class="format-card">
+        <h3>Book + Talk Bundle</h3>
+        <div class="duration">Event + Books</div>
+        <p>Combine a speaking engagement with books for your audience. Perfect for deeper engagement and lasting impact beyond the event.</p>
+      </article>
+      <article class="format-card">
+        <h3>LifeCharter Experience</h3>
+        <div class="duration">Keynote + Workshop</div>
+        <p>The full journey: a keynote plus guided alignment exercise where participants begin crafting their own LifeCharter.</p>
+      </article>
     </div>
-    <p style="text-align:center;margin-top:40px;color:var(--muted);font-size:14px;">Travel expenses additional. Nonprofit and faith-based discounts available.</p>
   </div>
 </section>
 
 <!-- Testimonials -->
-<section class="testimonials" id="testimonials">
+<section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
   <div class="wrap">
     <div class="section-header">
-      <h2>What People Say</h2>
+      <h2 id="testimonials-heading">What Audiences Are Saying</h2>
     </div>
-    <div class="testimonial-slider">
-      <div class="testimonial-text">"Babs has a rare gift for holding space while simultaneously calling you forward. Her teachings don't just inspire—they transform."</div>
-      <div class="testimonial-author">LifeCharter Circle Member<span>Sacred Kaleidoscope Community</span></div>
+    <div class="testimonial-placeholder">
+      <p>"Quote from event organizer or audience member will appear here."</p>
+      <div class="author">Name<br>Role / Organization</div>
     </div>
+    <p style="text-align:center;color:var(--lavender);font-size:16px;">Testimonials coming soon. <a href="#contact" style="color:var(--gold);">Book AmiLynne</a> and be the first to share your experience.</p>
   </div>
 </section>
 
 <!-- Books & Media -->
-<section class="books-media" id="media">
+<section class="books-media" id="media" aria-labelledby="media-heading">
   <div class="wrap">
     <div class="section-header">
-      <h2>Books, Media & LifeCharter Ecosystem</h2>
-      <p>Explore AmiLynne's broader body of work</p>
+      <h2 id="media-heading">Books, Media & LifeCharter</h2>
     </div>
+    <p style="text-align:center;max-width:700px;margin:0 auto 56px;font-size:18px;color:var(--muted);">AmiLynne's speaking is part of a larger body of work devoted to spiritual clarity, practical transformation, and living in alignment.</p>
     <div class="media-grid">
-      <div class="media-item">
-        <h4>Conversations of Consequence DAILY</h4>
-        <p>150+ episodes of spiritual reflection and practical alignment</p>
-      </div>
-      <div class="media-item">
-        <h4>LifeCharter Program</h4>
-        <p>12-dimension lifestyle design system for intentional living</p>
-      </div>
-      <div class="media-item">
-        <h4>Becoming Uncaged</h4>
-        <p>Book project for incarceration and reentry communities</p>
-      </div>
-      <div class="media-item">
-        <h4>Sacred Kaleidoscope Community</h4>
-        <p>500+ members on the journey of alignment and transformation</p>
-      </div>
+      <article class="media-card">
+        <div class="icon">📖</div>
+        <h4>Conversations of Consequence</h4>
+        <p>Lessons from the Still Small Voice<br><em>Book coming soon</em></p>
+      </article>
+      <article class="media-card">
+        <div class="icon">📚</div>
+        <h4>Sacred Alchemy</h4>
+        <p>Bridging Brain, Body and Soul in the Path to Wholeness<br><em>Book coming soon</em></p>
+      </article>
+      <article class="media-card">
+        <div class="icon">🦋</div>
+        <h4>LifeCharter</h4>
+        <p>A life design and spiritual alignment process helping people reconnect with values, vision, purpose, and strategy.</p>
+      </article>
+      <article class="media-card">
+        <div class="icon">🎙️</div>
+        <h4>Conversations of Consequence Daily</h4>
+        <p>Ongoing reflections and teachings for practical spiritual alignment.</p>
+      </article>
+      <article class="media-card">
+        <div class="icon">🎬</div>
+        <h4>TEDx Talk</h4>
+        <p>Power of Adaptability: Reclaim Command with Quadriplegia<br><em>Coming soon</em></p>
+      </article>
     </div>
   </div>
 </section>
 
 <!-- Meeting Planner Resources -->
-<section class="resources" id="resources">
+<section class="resources" id="resources" aria-labelledby="resources-heading">
   <div class="wrap">
     <div class="section-header">
-      <h2>Meeting Planner Resources</h2>
-      <p>Everything you need to promote AmiLynne's appearance at your event</p>
+      <h2 id="resources-heading">Meeting Planner Resources</h2>
     </div>
-    <div class="resource-list">
-      <a href="#" class="resource-item">
+    <p class="resources-intro">Make it easy to bring AmiLynne to your event. Download approved materials for promotion, planning, and event preparation.</p>
+    <div class="resource-grid">
+      <a href="#" class="resource-item" onclick="alert('Coming soon!');return false;">
         <div class="icon">📄</div>
         <div>
-          <h4>Download Speaker Kit</h4>
-          <p>One-sheet, bio, photos, and technical requirements</p>
+          <h4>Download Short Bio</h4>
+          <p>100-word introduction</p>
         </div>
       </a>
-      <a href="#" class="resource-item">
-        <div class="icon">🖼️</div>
+      <a href="#" class="resource-item" onclick="alert('Coming soon!');return false;">
+        <div class="icon">📃</div>
         <div>
-          <h4>High-Res Photos</h4>
-          <p>Professional headshots and speaking photos</p>
+          <h4>Download Long Bio</h4>
+          <p>Full biography</p>
         </div>
       </a>
-      <a href="#" class="resource-item">
-        <div class="icon">🎬</div>
-        <div>
-          <h4>Video Clips</h4>
-          <p>Short excerpts for social media promotion</p>
-        </div>
-      </a>
-      <a href="#" class="resource-item">
+      <a href="#" class="resource-item" onclick="alert('Coming soon!');return false;">
         <div class="icon">📋</div>
         <div>
-          <h4>Introduction Script</h4>
-          <p>Ready-to-use introduction for your emcee</p>
+          <h4>Download Speaker One-Sheet</h4>
+          <p>Topics, audiences, formats</p>
+        </div>
+      </a>
+      <a href="#" class="resource-item" onclick="alert('Coming soon!');return false;">
+        <div class="icon">🎤</div>
+        <div>
+          <h4>Download Stage Introduction</h4>
+          <p>Ready-to-use intro script</p>
+        </div>
+      </a>
+      <a href="#" class="resource-item" onclick="alert('Coming soon!');return false;">
+        <div class="icon">🖼️</div>
+        <div>
+          <h4>Download Headshots</h4>
+          <p>High-resolution photos</p>
+        </div>
+      </a>
+      <a href="#" class="resource-item" onclick="alert('Coming soon!');return false;">
+        <div class="icon">📝</div>
+        <div>
+          <h4>Download Talk Descriptions</h4>
+          <p>Approved keynote summaries</p>
+        </div>
+      </a>
+      <a href="#" class="resource-item" onclick="alert('Coming soon!');return false;">
+        <div class="icon">🔧</div>
+        <div>
+          <h4>Download AV & Accessibility Notes</h4>
+          <p>Technical requirements</p>
+        </div>
+      </a>
+      <a href="#contact" class="resource-item">
+        <div class="icon">📚</div>
+        <div>
+          <h4>Request Book Ordering Info</h4>
+          <p>Bulk orders for your event</p>
         </div>
       </a>
     </div>
@@ -1169,73 +1485,164 @@
 </section>
 
 <!-- Contact Form -->
-<section class="contact" id="contact">
+<section class="contact" id="contact" aria-labelledby="contact-heading">
   <div class="wrap">
     <div class="section-header">
-      <h2>Book AmiLynne to Speak</h2>
-      <p>Let's discuss how AmiLynne can serve your audience</p>
+      <h2 id="contact-heading">Book AmiLynne to Speak</h2>
+      <p>To inquire about AmiLynne speaking at your event, please complete the form below. Someone from the team will follow up with next steps.</p>
     </div>
-    <form class="contact-form" action="mailto:amilynne@amilynnecarroll.com" method="post" enctype="text/plain">
+    <form class="contact-form" action="https://formspree.io/f/xnqevjdr" method="POST">
       <div class="form-row">
         <div class="form-group">
-          <label for="name">Your Name *</label>
-          <input type="text" id="name" name="name" required placeholder="Jane Smith">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required placeholder="Your full name">
         </div>
         <div class="form-group">
-          <label for="email">Email Address *</label>
-          <input type="email" id="email" name="email" required placeholder="jane@organization.com">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com">
         </div>
       </div>
       <div class="form-row">
         <div class="form-group">
           <label for="organization">Organization</label>
-          <input type="text" id="organization" name="organization" placeholder="Your Organization">
+          <input type="text" id="organization" name="organization" placeholder="Company, church, university, etc.">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="event-name">Event Name</label>
+          <input type="text" id="event-name" name="event-name" placeholder="Name of your event">
         </div>
         <div class="form-group">
           <label for="event-date">Event Date</label>
           <input type="date" id="event-date" name="event-date">
         </div>
       </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="location">Event Location</label>
+          <input type="text" id="location" name="location" placeholder="City, State / Virtual">
+        </div>
+        <div class="form-group">
+          <label for="format">Format *</label>
+          <select id="format" name="format" required>
+            <option value="">Select format...</option>
+            <option value="in-person">In-Person</option>
+            <option value="virtual">Virtual</option>
+            <option value="hybrid">Hybrid</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="audience-size">Expected Audience Size</label>
+          <select id="audience-size" name="audience-size">
+            <option value="">Select size...</option>
+            <option value="under-50">Under 50</option>
+            <option value="50-100">50-100</option>
+            <option value="100-250">100-250</option>
+            <option value="250-500">250-500</option>
+            <option value="500-1000">500-1000</option>
+            <option value="1000+">1000+</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="audience-type">Audience Type</label>
+          <select id="audience-type" name="audience-type">
+            <option value="">Select type...</option>
+            <option value="faith">Faith Community</option>
+            <option value="healthcare">Healthcare / Caregiver</option>
+            <option value="disability">Disability / Accessibility</option>
+            <option value="corporate">Leadership / Corporate</option>
+            <option value="women">Women's / Personal Growth</option>
+            <option value="university">College / University</option>
+            <option value="nonprofit">Nonprofit / Mission</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
       <div class="form-group">
-        <label for="event-type">Event Type *</label>
-        <select id="event-type" name="event-type" required>
-          <option value="">Select event type...</option>
-          <option value="conference">Conference / Convention</option>
-          <option value="corporate">Corporate Event</option>
-          <option value="church">Church / Faith Event</option>
-          <option value="university">University / College</option>
-          <option value="nonprofit">Nonprofit / Mission</option>
-          <option value="healthcare">Healthcare / Medical</option>
-          <option value="disability">Disability / Accessibility</option>
-          <option value="retreat">Retreat / Intensive</option>
-          <option value="other">Other</option>
+        <label for="topic">Desired Keynote or Topic *</label>
+        <select id="topic" name="topic" required>
+          <option value="">Select topic...</option>
+          <option value="power-of-adaptability">Power of Adaptability</option>
+          <option value="yellow-light-leadership">Yellow Light Leadership</option>
+          <option value="fear-imagination">Fear Is Misunderstood Imagination</option>
+          <option value="trauma-true-north">From Trauma to True North</option>
+          <option value="conversations-consequence">Conversations of Consequence</option>
+          <option value="sacred-alchemy">Sacred Alchemy</option>
+          <option value="custom">Custom / Not Sure Yet</option>
         </select>
       </div>
       <div class="form-group">
-        <label for="message">Tell Us About Your Event *</label>
-        <textarea id="message" name="message" rows="5" required placeholder="Please share details about your event, audience size, desired topic, and any specific goals you have for AmiLynne's presentation..."></textarea>
+        <label for="purpose">Event Purpose & Goals</label>
+        <textarea id="purpose" name="purpose" rows="3" placeholder="What are you hoping your audience will take away?"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Inquiry</button>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="budget">Budget / Honorarium Range</label>
+          <select id="budget" name="budget">
+            <option value="">Select range...</option>
+            <option value="under-2500">Under $2,500</option>
+            <option value="2500-5000">$2,500 - $5,000</option>
+            <option value="5000-10000">$5,000 - $10,000</option>
+            <option value="10000+">$10,000+</option>
+            <option value="discuss">Let's discuss</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="travel">Travel Expenses Covered?</label>
+          <select id="travel" name="travel">
+            <option value="">Select...</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="discuss">Let's discuss</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="books">Are books requested for the event?</label>
+        <select id="books" name="books">
+          <option value="">Select...</option>
+          <option value="yes">Yes, interested</option>
+          <option value="no">No</option>
+          <option value="maybe">Maybe, tell me more</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="notes">Additional Notes</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Anything else we should know about your event, audience, or specific needs?"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:16px;padding:20px;">Submit Speaking Inquiry</button>
     </form>
   </div>
 </section>
 
 <!-- Final CTA -->
-<section class="final-cta">
+<section class="final-cta" aria-labelledby="final-cta-heading">
   <div class="wrap">
-    <h2>Ready to bring alignment to your audience?</h2>
-    <p>AmiLynne is currently booking keynotes and workshops for 2026-2027. Let's discuss how she can serve your community.</p>
-    <a href="#contact" class="btn btn-primary">Start the Conversation</a>
+    <h2 id="final-cta-heading">Bring AmiLynne to Your Stage</h2>
+    <p>Invite your audience into a message of courage, clarity, faith, and practical alignment. AmiLynne will help them pause, breathe, remember who they are, and take the next faithful step.</p>
+    <div class="final-cta-buttons">
+      <a href="#contact" class="btn btn-primary">Book AmiLynne to Speak</a>
+      <a href="#resources" class="btn btn-secondary">Download Speaker Kit</a>
+    </div>
   </div>
 </section>
 
+</main>
+
 <!-- Footer -->
-<footer>
+<footer role="contentinfo">
   <div class="wrap">
     <a href="#" class="logo">AmiLynne <span>Speaks</span></a>
-    <p>TEDx Speaker • Author • Spiritual Resilience Keynote Speaker</p>
+    <p>TEDx Speaker • Author • Spiritual Resilience & Practical Alignment Keynote Speaker</p>
     <p>Creator of <a href="https://amilynnecarroll.com">LifeCharter</a> • Host of <a href="#">Conversations of Consequence</a></p>
-    <p style="margin-top:24px;">© 2026 AmiLynne Carroll | <a href="mailto:amilynne@amilynnecarroll.com">amilynne@amilynnecarroll.com</a></p>
+    <p style="margin-top:28px;font-size:14px;">© 2026 AmiLynne Carroll | <a href="mailto:amilynne@amilynnecarroll.com">amilynne@amilynnecarroll.com</a></p>
   </div>
 </footer>
 
